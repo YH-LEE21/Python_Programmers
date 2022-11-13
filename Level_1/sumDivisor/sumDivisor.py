@@ -6,4 +6,6 @@ def sumDivisor(n):
 
     return sum(divisor)
 
-print(Sum_of_Factors())
+#test value
+print(sumDivisor(12)) #result value : 28
+print(sumDivisor(5)) #result value : 6
