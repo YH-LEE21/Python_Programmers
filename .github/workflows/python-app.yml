@@ -40,7 +40,6 @@ jobs:
     - name: Run Update README.md File
       run: |
         git add .
-        git diff
         git config --local user.email "ksmwy9029@naver.com"
         git config --local user.name "YH-LEE21"
         git commit -m "Automatically Update README.md file"
