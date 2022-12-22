@@ -13,6 +13,6 @@ def romaNum_REVERT(n):
                     elif n[x] == 'I':
                         plus -= 2
     return plus
-#IV = 4 
-print(roman("XX"))
 
+
+    print(romaNum_REVERT("XX"))
