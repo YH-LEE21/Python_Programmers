@@ -21,7 +21,7 @@ def count_files():
 def make_info(files_info, total_file_count):
     info = f"## Files Count In Folders\nTotal File Count: {total_file_count}\n"
     for directory_files_info in files_info:
-        temp = f"""- <a href={directory_files_info[2]} target={directory_files_info[0]}> : {directory_files_info[1]}\n"""
+        temp = f"""- <a href={directory_files_info[2]}>{directory_files_info[0]}</a> : {directory_files_info[1]}\n"""
         info += temp
     return info
     
