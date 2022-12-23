@@ -2,7 +2,7 @@ from collections import Counter
 from datetime import datetime
 import os
 
-home_url = "https://github.com/YH-LEE21/Python_Programmers"
+home_url = "https://github.com/YH-LEE21/Python_Programmers/tree/main"
 def count_files():
     files_info = []
     total_file_count = 0
