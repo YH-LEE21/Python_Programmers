@@ -28,9 +28,9 @@ def make_info(files_info, total_file_count):
 
 
 def make_read_me(info):
-    return f"""# Programmers
-Python을 사용하며 알고리즘을 이해하고 활용해보자!!<br>
-하루에 1개이상 문제 업로드<br><br>
+    return f"""# Self-Updating-Readme
+Push할 때마다 폴더 별 파일 수를 리드미에 자동으로 업데이트<br>
+Automatically update the number of files per folder to Readme whenever you push.<br><br>
 {info}
 """
 
