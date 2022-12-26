@@ -8,6 +8,7 @@ def count_files():
     total_file_count = 0
     directory_list = [directory for directory in os.listdir("./") if directory.find(".") == -1]
     directory_list.sort()
+    directory_list.remove("utils")
     for directory in directory_list:
         file_list = os.listdir(f"./{directory}")
         file_count = len(file_list)
@@ -28,7 +29,7 @@ def make_info(files_info, total_file_count):
 
 
 def make_read_me(info):
-    return f"""# Self-Updating-Readme
+    return f"""# Programmers with Python
 Push할 때마다 폴더 별 파일 수를 리드미에 자동으로 업데이트<br>
 Automatically update the number of files per folder to Readme whenever you push.<br><br>
 {info}
