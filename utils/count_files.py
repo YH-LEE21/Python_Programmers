@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 
 home_url = "https://github.com/YH-LEE21/Python_Programmers/tree/main"
+
 def count_files():
     files_info = []
     total_file_count = 0
@@ -19,6 +20,7 @@ def count_files():
     return files_info, total_file_count
   
   
+# 내가 보여주고 싶은 모든 파일 수, 각 폴더마다 있는 폴더 수   
 def make_info(files_info, total_file_count):
     info = f"## Files Count In Folders\nTotal File Count: {total_file_count}\n"
     for directory_files_info in files_info:
@@ -28,6 +30,7 @@ def make_info(files_info, total_file_count):
     
 
 
+# README.md에 보여지는 내용
 def make_read_me(info):
     return f"""# Programmers with Python
 Push할 때마다 폴더 별 파일 수를 리드미에 자동으로 업데이트<br>
@@ -36,6 +39,7 @@ Automatically update the number of files per folder to Readme whenever you push.
 """
 
 
+# push 할때
 def update_readme():
     files_info, total_file_count = count_files()
     info = make_info(files_info, total_file_count)
