@@ -2,15 +2,15 @@ import flet as ft
 # flutter so funny
 def main(page: ft.Page):
     #title
-    page.title = "Flet counter example"
+    page.title = "Flet Calc"
     #vertial 세로 가운데 정렬
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
     #텍스트 오른쪽에서 시작 
     txt_number = ft.TextField(value="0",text_align=ft.TextAlign.RIGHT,width=250)
 
-    def minus_click(e):
-        txt_number.value = str(int(txt_number.value) - 1)
+    def number_click(e,number):
+        txt_number.value = str(number)
         page.update()
 
     def plus_click(e):
@@ -24,7 +24,7 @@ def main(page: ft.Page):
                
         ft.Row(
             [
-                ft.TextButton("7"),
+                ft.TextButton("7",on_click=number_click),
                 ft.TextButton("8"),
                 ft.TextButton("9"),
                 ft.TextButton("*")
